@@ -43,8 +43,60 @@
     height: 100px;
     width: 14px;
     left: 240px;
-    top: -430px;
+    top: -350px;
     background: #000;
     z-index: 1;
     animation: hour_anim 600s linear infinite;
+}
+
+@keyframes seconds_anim {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes minutes_anim {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes hour_anim {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve {
+    font-family: arial;
+    font-size: 3.7em;
+    position: relative;
+    color: #000;
+    text-shadow: 0 0 10px white;
+    z-index: 0;
+}
+
+.one {
+    top: -600px;
+    left: 123px;
 }
