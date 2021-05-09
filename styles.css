@@ -11,3 +11,40 @@
     border: 10px solid #000;
     padding: 20px;
 }
+
+.seconds,
+.minutes,
+.hour {
+    line-height: 45px;
+    position: relative;
+    transform-origin: bottom;
+}
+
+.seconds {
+    height: 250px;
+    width: 5px;
+    left: 245px;
+    background: #ff0000;
+    z-index: 3;
+    animation: seconds_anim 60s linear infinite;
+}
+
+.minutes {
+    height: 250px;
+    width: 10px;
+    left: 242px;
+    background: #000;
+    top: -250px;
+    z-index: 2;
+    animation: minutes_anim 600s linear infinite;
+}
+
+.hour {
+    height: 100px;
+    width: 14px;
+    left: 240px;
+    top: -430px;
+    background: #000;
+    z-index: 1;
+    animation: hour_anim 600s linear infinite;
+}
